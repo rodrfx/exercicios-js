@@ -1,10 +1,10 @@
-// Write a function that takes an array (a) as argument
-// Extract the first 3 elements of a
-// Return the resulting array
+// Write a function that a string (a) as argument
+// Create an object that has a property with key 'key' and a value of a
+// Return the object
 
 function myFunction(a) {
-	return a.slice(0, 3);
+	return { key: a };
 }
 
-const result = myFunction([1, 2, 3, 4]);
+const result = myFunction('a');
 console.log(result);
