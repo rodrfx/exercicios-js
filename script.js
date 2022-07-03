@@ -1,8 +1,10 @@
-// Escreva uma função que recebe uma string como argumento, extrair os 3 últimos caracteres da string e retorne o resultado
+// Write a function that takes an array (a) as argument
+// Extract the first 3 elements of a
+// Return the resulting array
 
-function myFunction(str) {
-	return str.slice(-3);
+function myFunction(a) {
+	return a.slice(0, 3);
 }
 
-const result = myFunction('abcdef');
+const result = myFunction([1, 2, 3, 4]);
 console.log(result);
