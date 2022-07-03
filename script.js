@@ -1,10 +1,8 @@
-// Write a function that a string (a) as argument
-// Create an object that has a property with key 'key' and a value of a
-// Return the object
-
-function myFunction(a) {
-	return { key: a };
+// Write a function that takes an array (a) and a value (n) as argument
+// Return the nth element of 'a'
+function myFunction(a, n) {
+	return a[n - 1];
 }
 
-const result = myFunction('a');
+const result = myFunction([1, 2, 3, 4, 5], 3);
 console.log(result);
