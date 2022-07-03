@@ -1,8 +1,10 @@
-// Write a function that takes an array (a) and a value (n) as argument
-// Return the nth element of 'a'
-function myFunction(a, n) {
-	return a[n - 1];
+// Write a function that takes a string (a) as argument
+// Extract the first half a
+// Return the result
+function myFunction(a) {
+	const strLength = a.length / 2;
+	return a.slice(0, strLength);
 }
 
-const result = myFunction([1, 2, 3, 4, 5], 3);
+const result = myFunction('abcdefgh');
 console.log(result);
