@@ -1,8 +1,21 @@
-// Write a function that takes a string (a) and a number (n) as argument
-// Return the nth character of 'a'
-function myFunction(a = 'abc', n) {
-	return a.slice(n - 1, n);
+// Write a function that takes an array of numbers as argument
+// Return the number of negative values in the array
+function myFunction(a) {
+	let negativeNumbers = 0;
+
+	for (const element of a) {
+		if (element < 0) {
+			negativeNumbers += 1;
+		}
+	}
+	return negativeNumbers;
 }
 
-const result = myFunction('abcd', 1);
+//OU
+
+// function myFunction(a) {
+//	return a.filter((el) => el < 0).length;
+// }
+
+const result = myFunction([1, -2, 2, -4]);
 console.log(result);
