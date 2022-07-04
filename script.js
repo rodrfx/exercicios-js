@@ -1,10 +1,9 @@
-// Write a function that takes an object (a) and a string (b) as argument
-// Return true if a has a property with key b
-// Return false otherwise
-
-function myFunction(a, b) {
-	return b in a;
+// Write a function that takes an array of strings as argument
+// Sort the array elements alphabetically
+// Return the result
+function myFunction(arr) {
+	return arr.sort();
 }
 
-const result = myFunction({ x: 'a', y: 'b', z: 'c' }, 'b');
+const result = myFunction(['z', 'c', 'd', 'a', 'y', 'a', 'w']);
 console.log(result);
