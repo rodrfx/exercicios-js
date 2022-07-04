@@ -1,9 +1,9 @@
-// Write a function that takes an array (a) as argument
-// Remove the first 3 elements of 'a'
+// Write a function that takes a string (a) as argument
+// Remove the last 3 characters of a
 // Return the result
 function myFunction(a) {
-	return a.slice(3);
+	return a.slice(0, -3);
 }
 
-const result = myFunction([5, 4, 3, 2, 1, 0]);
+const result = myFunction('abcdefg');
 console.log(result);
