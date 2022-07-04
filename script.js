@@ -1,9 +1,8 @@
-// Write a function that takes an array of strings as argument
-// Sort the array elements alphabetically
-// Return the result
-function myFunction(arr) {
-	return arr.sort();
+// Write a function that takes an object with two properties and a string as arguments
+// It should return the value of the property with key equal to the value of the string
+function myFunction(obj, key) {
+	return obj[key];
 }
 
-const result = myFunction(['z', 'c', 'd', 'a', 'y', 'a', 'w']);
+const result = myFunction({ continent: 'Asia', country: 'Japan' }, 'continent');
 console.log(result);
