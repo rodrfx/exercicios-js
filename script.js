@@ -1,9 +1,8 @@
-// Write a function that takes a string (a) as argument
-// Remove the last 3 characters of a
-// Return the result
-function myFunction(a) {
-	return a.slice(0, -3);
+// Write a function that takes a string (a) and a number (n) as argument
+// Return the nth character of 'a'
+function myFunction(a = 'abc', n) {
+	return a.slice(n - 1, n);
 }
 
-const result = myFunction('abcdefg');
+const result = myFunction('abcd', 1);
 console.log(result);
