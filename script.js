@@ -1,10 +1,10 @@
-// Write a function that takes a string (a) as argument
-// Extract the first half a
-// Return the result
-function myFunction(a) {
-	const strLength = a.length / 2;
-	return a.slice(0, strLength);
+// Write a function that takes an object (a) and a string (b) as argument
+// Return true if a has a property with key b
+// Return false otherwise
+
+function myFunction(a, b) {
+	return b in a;
 }
 
-const result = myFunction('abcdefgh');
+const result = myFunction({ x: 'a', y: 'b', z: 'c' }, 'b');
 console.log(result);
