@@ -1,9 +1,14 @@
-// Write a function that takes a Set and a value as arguments
-// Check if the value is present in the Set
-
-function myFunction(set, val) {
-	return set.has(val);
+// Write a function that takes a number (a) as argument
+// If a is a whole number (has no decimal place), return true
+// Otherwise, return false
+function myFunction(a = 1) {
+	return parseInt(a) === parseFloat(a);
 }
 
-const result = myFunction(new Set([123]), 2);
+// OU
+// function myFunction(a) {
+//	return a - Math.floor(a) === 0
+//  }
+
+const result = myFunction(10.1);
 console.log(result);
