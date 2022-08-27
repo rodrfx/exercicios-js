@@ -1,14 +1,11 @@
-// Write a function that takes a number (a) as argument
-// If a is a whole number (has no decimal place), return true
-// Otherwise, return false
-function myFunction(a = 1) {
-	return parseInt(a) === parseFloat(a);
+// Write a function that takes two strings (a and b) as arguments
+// If a contains b, append b to the beginning of a
+// If not, append it to the end
+// Return the concatenation
+
+function myFunction(a, b) {
+	return a.includes(b) ? b + a : a + b;
 }
 
-// OU
-// function myFunction(a) {
-//	return a - Math.floor(a) === 0
-//  }
-
-const result = myFunction(10.1);
+const result = myFunction('lips', 's');
 console.log(result);
