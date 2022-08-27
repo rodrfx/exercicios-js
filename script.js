@@ -1,10 +1,11 @@
-// Write a function that takes an array (a) and a value (b) as argument
-// The function should remove all elements equal to 'b' from the array
-// Return the filtered array
+// Write a function that takes an object (a) and a string (b) as argument
+// Return true if the object has a property with key 'b', but only if it has a truthy value
+// In other words, it should not be null or undefined or false
+// Return false otherwise
 
 function myFunction(a, b) {
-	return a.filter((item) => item !== b);
+	return Boolean(a[b]);
 }
 
-const result = myFunction([1, 2, 3], 2);
+const result = myFunction({ x: 'a', b: 'b', z: undefined }, 'z');
 console.log(result);
