@@ -1,8 +1,12 @@
-// Write a function that takes an array (a) and a number (n) as arguments
-// It should return the last n elements of a
-function myFunction(a, n) {
-	return a.splice(-n);
+// Write a function that takes two strings (a and b) as arguments
+// Create an object that has a property with key 'a' and a value of 'b'
+// Return the object
+function myFunction(a, b) {
+	let obj = new Object();
+	obj[a] = b;
+
+	return obj;
 }
 
-const result = myFunction([1, 2, 3, 4, 5], 2);
+const result = myFunction('z', 'c');
 console.log(result);
