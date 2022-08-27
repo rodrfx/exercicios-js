@@ -1,11 +1,10 @@
-// Write a function that takes two strings (a and b) as arguments
-// If a contains b, append b to the beginning of a
-// If not, append it to the end
-// Return the concatenation
+// Write a function that takes an array (a) and a value (b) as argument
+// The function should remove all elements equal to 'b' from the array
+// Return the filtered array
 
 function myFunction(a, b) {
-	return a.includes(b) ? b + a : a + b;
+	return a.filter((item) => item !== b);
 }
 
-const result = myFunction('lips', 's');
+const result = myFunction([1, 2, 3], 2);
 console.log(result);
